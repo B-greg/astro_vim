@@ -20,6 +20,11 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+
+    -- Telescope
+    ["<C-p>"] = { "<cmd>Telescope fd<CR>", desc = "Activates Telescope fd" },
+    ["<M-p>"] = { "<cmd>Telescope commands<CR>", desc = "Activates Telescope commands" },
+    ["<C-f>"] = { "<cmd>Telescope live_grep<CR>", desc = "Activates Telescope live_grep" },
   },
   t = {
     -- setting a mapping to false will disable it
