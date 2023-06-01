@@ -9,4 +9,14 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  
+
+--     "ellisonleao/gruvbox.nvim",
+--     {
+--      "ellisonleao/gruvbox.nvim",
+--       name = "gruvbox",
+--       config = function()
+--         require("gruvbox").setup {}
+--       end,
+--     }
 }
