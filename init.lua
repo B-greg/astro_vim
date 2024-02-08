@@ -51,7 +51,17 @@ return {
     -- enable servers that you already have installed without mason
     servers = {
       -- "pyright"
+      "dartls"
     },
+    config = {
+      dartls = {
+        settings = {
+          dart = {
+            lineLength = 120
+          }
+        }
+      }
+    }
   },
 
   -- Configure require("lazy").setup() options
