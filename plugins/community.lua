@@ -13,5 +13,7 @@ return {
   { import = "astrocommunity.colorscheme.everforest" },
   { import = "astrocommunity.colorscheme.gruvbox-baby" },
   --  { import = "astrocommunity.completion.copilot-lua-cmp" },
+  --  This plugin allow to move lines of code with <A-h> <A-j>
+    { import = "astrocommunity.motion.mini-move" },
 
 }
