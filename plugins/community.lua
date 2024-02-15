@@ -15,5 +15,28 @@ return {
   --  { import = "astrocommunity.completion.copilot-lua-cmp" },
   --  This plugin allow to move lines of code with <A-h> <A-j>
     { import = "astrocommunity.motion.mini-move" },
+    { import = "astrocommunity.pack.dart" },
+    -- { import = "astrocommunity.test.neotest" };
+  -- Configure flutter-tools
+  { "akinsho/flutter-tools.nvim", 
+    opts = {
+      lsp  = {
+            settings = {
+                lineLength = 120
+            }
+      }
+    }
+  }
+
+
+    --config = {
+    --  dartls = {
+    --    settings = {
+    --      dart = {
+    --        lineLength = 120
+    --      }
+    --    }
+    --  }
+   -- }
 
 }

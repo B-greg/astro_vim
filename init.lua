@@ -17,9 +17,6 @@ return {
     },
   },
 
-  -- Set colorscheme to use
-  colorscheme = "gruvbox-baby",
-
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
     virtual_text = true,
@@ -51,18 +48,11 @@ return {
     -- enable servers that you already have installed without mason
     servers = {
       -- "pyright"
-      "dartls"
     },
     config = {
-      dartls = {
-        settings = {
-          dart = {
-            lineLength = 120
-          }
-        }
-      }
-    }
+    },
   },
+
 
   -- Configure require("lazy").setup() options
   lazy = {
