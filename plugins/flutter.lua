@@ -3,7 +3,7 @@ return {
 
     "nvim-neotest/neotest",
    requires = {
-    'sidlatau/neotest-dart',
+    'B-greg/neotest-dart',
   },
  config = function()
     -- get neotest namespace (api call creates or returns namespace)

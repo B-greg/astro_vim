@@ -3,6 +3,11 @@
 -- Please use this mappings table to set keyboard mapping since this is the
 -- lower level configuration and more robust one. (which-key will
 -- automatically pick-up stored data by this setting.)
+--
+-- local get_icon = utils.get_icon
+local utils = require "user.utils"
+local get_icon = utils.get_icon
+
 return {
   -- first key is the mode
   n = {
@@ -32,6 +37,16 @@ return {
     ["<leader>ss"] = {'<cmd>lua require("spectre").toggle()<CR>',  desc = "Toggle Spectre"},
     ["<leader>sp"] = {'<cmd>lua require("spectre").open_file_search({select_word=true})<CR>',  desc = "Search on current file"},
     ["<leader>sw"] = {'<cmd>lua require("spectre").open_visual({select_word=true})<CR>',  desc = "Search current word"},
+
+
+    -- Neotest
+    ["<leader>T"] = {desc = get_icon("󰂓", "", 1) .. "Test"},
+    ["<leader>Tr"] = {'<cmd>lua require("neotest").run.run()<CR>', desc = "Run test under cursor"},
+    ["<leader>Tf"] = {'<cmd>lua require("neotest").run.run(vim.fn.expand("%"))<CR>', desc = get_icon("󰸩", "", 1) .. "Run test current file"},
+    ["<leader>Ts"] = {'<cmd>lua require("neotest").summary.toggle()<CR>', desc = "Toogle test summary"},
+    ["<leader>To"] = {'<cmd>lua require("neotest").output.open()<CR>', desc = "Open output"},
+    ["<leader>TO"] = {'<cmd>lua require("neotest").output_panel.toggle()<CR>', desc = "Toogle output panel"},
+    ["<leader>Td"] = {'<cmd>lua require("neotest").run.run({strategy = "dap"})<CR>', desc = "Debug test under cursor"},
 
   },
   t = {
