@@ -82,4 +82,13 @@ return {
     --   },
     -- }
   end,
+
+  options = function()
+    vim.api.nvim_create_autocmd({ "BufReadPost", "BufNewFile" }, {
+      pattern = {
+        'Fastfile', 'Appfile', 'Matchfile', 'Pluginfile',
+      },
+      command = "set filetype=ruby",
+    })
+  end
 }

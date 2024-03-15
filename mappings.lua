@@ -33,10 +33,10 @@ return {
 
 
     -- Spectre
-    ["<leader>s"] = {desc = "Spectre"},
-    ["<leader>ss"] = {'<cmd>lua require("spectre").toggle()<CR>',  desc = "Toggle Spectre"},
-    ["<leader>sp"] = {'<cmd>lua require("spectre").open_file_search({select_word=true})<CR>',  desc = "Search on current file"},
-    ["<leader>sw"] = {'<cmd>lua require("spectre").open_visual({select_word=true})<CR>',  desc = "Search current word"},
+    ["<leader>fs"] = {desc = "Spectre"},
+    ["<leader>fss"] = {'<cmd>lua require("spectre").toggle()<CR>',  desc = "Toggle Spectre"},
+    ["<leader>fsp"] = {'<cmd>lua require("spectre").open_file_search({select_word=true})<CR>',  desc = "Search on current file"},
+    ["<leader>fsw"] = {'<cmd>lua require("spectre").open_visual({select_word=true})<CR>',  desc = "Search current word"},
 
 
     -- Neotest

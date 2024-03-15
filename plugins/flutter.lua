@@ -1,6 +1,4 @@
 return {
-
-
     "nvim-neotest/neotest",
    requires = {
     'B-greg/neotest-dart',
